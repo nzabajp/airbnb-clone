@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*navbar styling*/
+
+.nav-bar {
+    background-color: white;
+    height: 70px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 30px;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    width: 82px;
+    margin: 0px;
+}
+
+/*hero section styling*/
+
+.hero-sec {
+    padding: 26px 36px 0px 36px;
+    display: flex;
+    flex-direction: column;
+
+}
+.hero-sec > img {
+    max-width: 90%;
+    align-self: center;
+}
+.hero-sec > h1 {
+    font-size: 36px;
+    line-height: 110%;
+    margin-bottom: 16px;
+}
+.hero-sec > p {
+    line-height: 110%;
+    color: #222222;
+}
+
+/*Cards section styling*/
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin-left: 19px;
+    margin-right: 19px;
+    margin-top: 49px;
+    width: 176px;
+    position: relative; /* use when positioning the white badges (i.e. sold out)*/
+    
+}
+.cards > img {
+    border-radius: 9px;
+    width: 100%;
+}
+.rating {
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+    margin-bottom: 8px;
+    
+}
+.rating > img {
+    margin-right: 2px;
+    width: 14px;
+}
+.rating-num {
+    color: #222222;
+    font-size: 12px;
+    line-height: 110%;
+}
+.grey-span {
+    color: #918E9B;
+    margin-left: 2px;
+    font-size: 12px;
+    line-height: 110%;
+}
+.cards > p {
+    font-size: 12px;
+    color: #222222;
+    line-height: 110%;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+.cards > p > span {
+    font-weight: 600;
+}
+/*Make the cards scroll horizontally*/
+.card-list {
+    display: flex;
+    overflow-x: scroll;
+}
+.card-list > div {
+    flex-shrink: 0;
+}
+/*textBadge styling*/
+.badge-text {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    font-size: 10px;
+    background-color: white;
+    width: 61px;
+    height: 20px;
+    text-align: center;
+    padding-top: 3px;
+    border-radius: 2px;
+
+}
